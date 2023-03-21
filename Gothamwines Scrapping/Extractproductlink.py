@@ -107,10 +107,7 @@ class Extractdata:
         }
 
 
-        proxies = {
-            'http': 'http://intrics-res-us-sid:MpyRwi4gJpZP@gw.ntnt.io:5959',
-            'https': 'http://intrics-res-us-sid:MpyRwi4gJpZP@gw.ntnt.io:5959'}
-
+        proxies = given_proxies
         outfilename = dir_path + "/upc" + "_" + str(id) + ".txt"
         if not os.path.exists(outfilename):
             source = ""
