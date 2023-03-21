@@ -224,19 +224,19 @@ class htmlhelper:
                 "Driver={SQL SERVER};"
                 "Server=rdpdb-scp-1.database.windows.net;"
                 "Database=database_name;"
-                "uid=rdbatch;pwd=password")
+                "uid=id;pwd=password")
         if DBConfig.SQlServer == "CloudDevelopment":
             conn = pyodbc.connect(
                 "Driver={SQL SERVER};"
                 "Server=rdddb-scp-1.database.windows.net;"
                 "Database=database_name;"
-                "uid=rdbatch;pwd=password")
+                "uid=id;pwd=password")
         if DBConfig.SQlServer == "125":
             conn = pyodbc.connect(
                 "Driver={SQL SERVER};"
                 "Server=95.217.196.125;"
                 "Database=database_name;"
-                "uid=sa;pwd=password")
+                "uid=id;pwd=password")
 
         cursor = conn.cursor()
         a = "insert into " + str(
