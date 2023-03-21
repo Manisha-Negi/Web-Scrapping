@@ -98,10 +98,9 @@ class Extractdata:
         Category = link[1]
         url = link[2]
         product = link[3]
-
-        proxies = {'http': 'http://us.proxymesh.com:31280',
-                   'https': 'http://us.proxymesh.com:31280'}
-
+                                 
+        proxies = given_proxies
+                                 
         outfilename = os.path.dirname(__file__) + "/product" + "_" + str(id) + ".txt"
         if not os.path.exists(outfilename):
             r = ""
