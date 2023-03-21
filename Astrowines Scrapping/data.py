@@ -41,11 +41,9 @@ class data:
             noofpage=1
             startpage=1
             i=1
-
-            proxies = {'http': 'http://us.proxymesh.com:31280',
-                       'https': 'http://us.proxymesh.com:31280'}
-
-
+            
+            proxies = given_proxies
+            
             while i <= noofpage:
                 outfilename = os.path.dirname(__file__) + "/Log/" + str(_JobNumber) + "/Data_" + str(id) + "_" + str(i) + ".txt"
                 print(outfilename)
