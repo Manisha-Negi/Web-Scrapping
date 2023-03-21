@@ -67,11 +67,7 @@ def mainlink(Cookie,_Date,_Zip,_JobNumber):
 
 
 def urlget(url, Cookie):
-    # proxies = {'http': 'http://us.proxymesh.com:31280',
-    #            'https': 'http://us.proxymesh.com:31280'}
-    proxies = {'http': 'http://intrics-res-us-sid:MpyRwi4gJpZP@gw.ntnt.io:5959',
-               'https': 'http://intrics-res-us-sid:MpyRwi4gJpZP@gw.ntnt.io:5959'}
-
+    
     source=""
     while source=="" or source.status_code!=200:
         try:
