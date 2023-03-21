@@ -223,20 +223,20 @@ class htmlhelper:
             conn = pyodbc.connect(
                 "Driver={SQL SERVER};"
                 "Server=rdpdb-scp-1.database.windows.net;"
-                "Database=WebscrapeIntegration;"
-                "uid=rdbatch;pwd=N#mI&7afO5Tp")
+                "Database=database_name;"
+                "uid=rdbatch;pwd=password")
         if DBConfig.SQlServer == "CloudDevelopment":
             conn = pyodbc.connect(
                 "Driver={SQL SERVER};"
                 "Server=rdddb-scp-1.database.windows.net;"
-                "Database=WebscrapeIntegrationAuto;"
-                "uid=rdbatch;pwd=6*MBF2LezCCQ")
+                "Database=database_name;"
+                "uid=rdbatch;pwd=password")
         if DBConfig.SQlServer == "125":
             conn = pyodbc.connect(
                 "Driver={SQL SERVER};"
                 "Server=95.217.196.125;"
-                "Database=webscrape;"
-                "uid=sa;pwd=Dup(e)0@98!")
+                "Database=database_name;"
+                "uid=sa;pwd=password")
 
         cursor = conn.cursor()
         a = "insert into " + str(
