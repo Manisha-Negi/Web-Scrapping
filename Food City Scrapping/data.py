@@ -72,10 +72,8 @@ class data:
 
                 if category1 == 'oil' or category1 == 'mayo':
                     PostData = 'vica=ctl_elastic_search&vicb=getItemsByPage&vicc=h&searchType=All&Search='+category1+'&page='+str(i)
-                # proxies = {'http': 'http://intrics-res-us-sid:MpyRwi4gJpZP@gw.ntnt.io:5959',
-                #            'https': 'http://intrics-res-us-sid:MpyRwi4gJpZP@gw.ntnt.io:5959'}
-                proxies = {'http': 'http://us.proxymesh.com:31280',
-                           'https': 'http://us.proxymesh.com:31280'}
+                
+               
 
                 outfilename = os.path.dirname(__file__) + "/Log/" + str(_JobNumber) + "/Data_" + str(id) + "_" + str(i) + ".txt"
                 print(outfilename)
