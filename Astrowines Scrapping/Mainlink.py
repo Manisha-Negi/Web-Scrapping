@@ -32,10 +32,7 @@ def getdatafromweb(link, _JobNumber, mainlink_list, _Zip):
     Cat1 = link[2]
     if (Mainlink != ''):
         source = ""
-
-        proxies = {'http': 'http://intrics-res-us-sid:MpyRwi4gJpZP@gw.ntnt.io:5959',
-                   'https': 'http://intrics-res-us-sid:MpyRwi4gJpZP@gw.ntnt.io:5959'}
-
+        proxies = given_proxies
         while source == "" or source.status_code != 200:
             try:
                 source = requests.get(Mainlink, proxies = proxies, verify=False)
