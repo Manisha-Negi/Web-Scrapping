@@ -31,12 +31,8 @@ class data:
             noofpage = 1
             startpage = 1
             i = 1
-
-            proxies = {
-                'http': 'http://intrics-res-us-sid:MpyRwi4gJpZP@gw.ntnt.io:5959',
-                'https': 'http://intrics-res-us-sid:MpyRwi4gJpZP@gw.ntnt.io:5959'}
-
-
+            proxies = given_proxies
+            
             headers ={
             "accept": "*/*",
             "accept-encoding":"gzip, deflate, br",
